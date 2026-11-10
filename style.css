@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #fdf6ed;
+}
+header {
+  background-color: #43aa8b;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+nav {
+  background-color: #4396aa;
+  margin: 0;
+  padding: 10px;
+}
+nav a {
+  margin: 10px 20px;
+  color: black;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a:focus {
+  outline: 2px solid;
+}
+main {
+  max-width: 100%;
+  height: auto;
+}
+#about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#about p {
+  flex: 1;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+  border: 1px solid #242020;
+}
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #242020;
+}
+#about img {
+  width: 300px;
+}
+.project-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-images img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-left: 50px;
+  padding: 20px;
+  align-items: left;
+}
+
+button {
+  padding: 10px;
+  background-color: #43aa8b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+footer {
+  background-color: #43aa8b;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+.github-link a {
+  color: #111111;
+}
+.github-link a:hover {
+  text-decoration: underline;
+}
+/* Responsive Media Query for Mobile */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #about img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
