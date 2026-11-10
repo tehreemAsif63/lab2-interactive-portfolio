@@ -88,6 +88,7 @@ body {
 .form-group label {
     font-weight: bold;
     color: #242020;
+    font-size: 17px;
 }
 
 /* Input fields, dropdown and comments */
