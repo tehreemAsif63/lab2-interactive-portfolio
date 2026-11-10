@@ -1,0 +1,15 @@
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+
+# Dependencies and build output
+node_modules/
+dist/
