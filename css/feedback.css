@@ -1,0 +1,246 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fdf6ed;
+    color: #242020;
+}
+
+.page-header {
+    background-color: #43aa8b;
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.page-header h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    margin-bottom: 0;
+}
+
+/* Main content */
+.form-container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Back to portfolio link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #28765f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.back-link:focus {
+    outline: 2px solid #4396aa;
+    outline-offset: 4px;
+}
+
+/* Feedback section */
+.feedback-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #d8e5dc;
+}
+
+.feedback-section h2 {
+    color: #28765f;
+    margin-top: 0;
+}
+
+.feedback-section>p {
+    line-height: 1.6;
+}
+
+/* Form layout */
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* Field labels */
+.form-group label {
+    font-weight: bold;
+    color: #242020;
+}
+
+/* Input fields, dropdown and comments */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #242020;
+    background-color: white;
+    border: 1px solid #b8c9c0;
+    border-radius: 5px;
+    transition: border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4396aa;
+    box-shadow: 0 0 0 3px rgba(67, 150, 170, 0.2);
+}
+
+/* text area */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* small guidance text */
+.form-group small {
+    color: #555555;
+    font-size: 13px;
+}
+
+/* Character counter */
+.character-counter {
+    margin: 0;
+    font-size: 13px;
+    color: #b42318;
+}
+
+/* Counter when minimum is reached */
+.character-counter.valid {
+    color: #28765f;
+}
+
+/* Error messages */
+.field-error {
+    margin: 0;
+    color: #b42318;
+    font-size: 13px;
+}
+
+/* fields that are invalid */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border: 2px solid #b42318;
+}
+
+/* fields that are valid */
+.form-group input.valid,
+.form-group select.valid,
+.form-group textarea.valid {
+    border: 2px solid #28765f;
+}
+
+/* form buttons */
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #43aa8b;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-buttons button:hover {
+    background-color: #28765f;
+}
+
+.form-buttons button:focus {
+    outline: 3px solid #4396aa;
+    outline-offset: 3px;
+}
+
+/* clear button to clear all form*/
+.form-buttons button[type="reset"] {
+    background-color: #4396aa;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #32788a;
+}
+
+/* Success message */
+.form-status {
+    margin-top: 20px;
+    color: #28765f;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* footer */
+.page-footer {
+    background-color: #43aa8b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* Mobile phone layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .page-header {
+        padding: 20px 10px;
+    }
+
+    .form-container {
+        padding: 10px;
+        margin: 15px auto;
+    }
+
+    .feedback-section {
+        padding: 20px 15px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+}
