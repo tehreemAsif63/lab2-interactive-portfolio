@@ -15,8 +15,106 @@
         <h1>Feedback Form</h1>
         <p>I would love to hear your thoughts and suggestions.</p>
     </header>
-    <main>
-        
+    <main class="form-container">
+        <a href="index.html">Back to Portfolio</a>
+        <section class="feedback-section">
+            <h2>Share your feedback</h2>
+            <p>
+                Please fill in the form below. Your feedback
+                helps me improve my portfolio.
+            </p>
+
+            <form id="feedbackForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required
+                        minlength="2" aria-describedby="fullNameError" aria-invalid="false">
+
+                    <p class="field-error" id="fullNameError" aria-live="polite"></p>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required
+                        aria-describedby="emailError" aria-invalid="false">
+
+                    <p class="field-error" id="emailError" aria-live="polite"></p>
+                </div>
+
+                <!-- Topic of Interest -->
+                <div class="form-group">
+                    <label for="topic">Topic of Interest</label>
+
+                    <select id="topic" name="topic" required aria-describedby="topicError" aria-invalid="false">
+                        <option value="">Choose a topic</option>
+                        <option value="portfolio">Portfolio and Projects</option>
+                        <option value="design">Website Design</option>
+                        <option value="development">Web Development</option>
+                        <option value="other">Other Suggestions</option>
+                    </select>
+
+                    <p class="field-error" id="topicError" aria-live="polite"></p>
+                </div>
+
+                <!-- Comments -->
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+
+                    <textarea id="comments" name="comments" rows="5" placeholder="Write your feedback here..." required
+                        minlength="15" aria-describedby="commentsHelp commentsError" aria-invalid="false"></textarea>
+
+                    <small id="commentsHelp">
+                        Minimum 15 characters.
+                    </small>
+
+                    <p class="character-counter" id="characterCounter" aria-live="polite">
+                        0 characters (minimum 15)
+                    </p>
+
+                    <p class="field-error" id="commentsError" aria-live="polite"></p>
+                </div>
+
+                <!-- Optional Website -->
+                <div class="form-group">
+                    <label for="website">
+                        Website (Optional)
+                    </label>
+
+                    <input type="url" id="website" name="website" placeholder="https://example.com"
+                        aria-describedby="websiteError" aria-invalid="false">
+
+                    <p class="field-error" id="websiteError" aria-live="polite"></p>
+                </div>
+
+                <!-- Form Buttons -->
+                <div class="form-buttons">
+
+                    <button type="submit">
+                        Submit Feedback
+                    </button>
+
+                    <button type="reset">
+                        Clear Form
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- Success Message -->
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+
+            +
+        </section>
+
+
+
+
     </main>
     <footer class="page-footer">
         <p>Thank you for taking the time to share your feedback-</p>
