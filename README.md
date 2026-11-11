@@ -27,9 +27,14 @@ Grade 3
 
 ## How to run
 
-1. Download or clone this repository.
+1. Download or clone this repository using git clone "https://github.com/tehreemAsif63/lab2-interactive-portfolio.git".
 2. Open the project folder.
-3. Open `index.html` in a web browser.
+3. Open `index.html` in a web browser to look at the portfolio and from there you can go to feedback page. Otherwise open `feedback.html` directly to go to feedback page.
+
+## Implementation Details
+
+- **Validation & State Management:** Form validation is handled via vanilla JavaScript event listeners checking for required fields, valid email patterns, and a minimum of 15 characters in the comments box.
+- **Live Counter:** A real-time `input` event listener tracks the length of the comments string and updates the counter display dynamically.
 
 ## Author
 
